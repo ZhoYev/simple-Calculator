@@ -1,0 +1,96 @@
+body {
+    background-image: radial-gradient(circle at 50% 12.27%, #ff9f66 0, #ff9466 12.5%, #ff8362 25%, #ff6e5c 37.5%, #f25353 50%, #e3334c 62.5%, #d70249 75%, #cd004b 87.5%, #c70051 100%);
+    width: 100%;
+    height: 1300px;
+    overflow: hidden;
+    
+    
+}
+
+.calc {
+    margin: 100px auto;
+    width: 300px;
+    height: 500px;
+    /* border: 2px solid #000; */
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 18px;
+    box-shadow: 8px 8px 5px #4f4f4f;
+}
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 20px;
+    border: 1px solid silver;
+    border-radius: 7px;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 3.3rem;
+    margin: 0;
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    'ac plus-minus persent division'
+    'seven eight nine multi'
+    'four five six minus'
+    'one two three plus'
+    'zero zero fot equal';
+    grid-gap: 7px;
+    justify-items: center;
+    
+}
+.btn {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(70%);
+}
+
+.btn.bg-grey {
+    background:  #a6a6a6;
+}
+.btn.bg-orange {
+    background: #ff9501;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.footer-discription {
+    font-size: 13px;
+    margin: 0;
+}
